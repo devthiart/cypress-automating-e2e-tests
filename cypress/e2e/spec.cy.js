@@ -14,7 +14,7 @@ describe('template spec', () => {
     cy.get('.button').click();
   });
 
-  it("Must load the page correctly and the message button on header need to access message page", () => {
+  it("Must load the page correctly and the message button on header menu need to access message page", () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.get('.header__message').click();
   });
@@ -22,5 +22,9 @@ describe('template spec', () => {
   it("Must load the page correctly and the home button on header menu need to access the home page", () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/message');
     cy.get('.header__home').click();
+  });
+
+  it("Must load the page login correctly", () => {
+    cy.visit('https://adopet-frontend-cypress.vercel.app/login');
   });
 });
