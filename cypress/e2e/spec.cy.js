@@ -31,4 +31,10 @@ describe('template spec', () => {
   it("Must load the home page correctly", () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/home');
   });
+
+  it("Must load the home page correctly and access the page to speak to the responsible party", () => {
+    cy.visit('https://adopet-frontend-cypress.vercel.app/home');
+    // cy.get('.card__contact').first().click();
+    cy.get('.card__contact').eq(0).click();
+  });
 });
