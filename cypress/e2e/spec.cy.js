@@ -24,7 +24,11 @@ describe('template spec', () => {
     cy.get('.header__home').click();
   });
 
-  it("Must load the page login correctly", () => {
+  it("Must load the login page correctly", () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/login');
+  });
+
+  it("Must load the home page correctly", () => {
+    cy.visit('https://adopet-frontend-cypress.vercel.app/home');
   });
 });
