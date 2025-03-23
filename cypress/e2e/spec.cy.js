@@ -7,5 +7,10 @@ describe('template spec', () => {
     cy.get('input[name="password"]').type('Senha123');
     cy.get('input[name="confirm_password"]').type('Senha123');
     cy.contains('button', 'Cadastrar').click();
-  })
-})
+  });
+
+  it("Must load the page correctly and click on the button 'Ver pets disponíveis para adoção'", () => {
+    cy.visit('https://adopet-frontend-cypress.vercel.app/');
+    cy.get('.button').click();
+  });
+});
