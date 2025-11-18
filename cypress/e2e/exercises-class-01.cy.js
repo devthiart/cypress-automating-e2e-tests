@@ -1,14 +1,4 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://adopet-frontend-cypress.vercel.app/');
-    cy.contains('a', 'Cadastrar').click();
-    cy.get('input[name="nome"]').type('Thiago André');
-    cy.get('input[name="email"]').type('thiagoandre@email.com');
-    cy.get('input[name="password"]').type('Senha123');
-    cy.get('input[name="confirm_password"]').type('Senha123');
-    cy.contains('button', 'Cadastrar').click();
-  });
-
+describe('Exercises - Class 01', () => {
   it("Must load the page correctly and click on the button 'Ver pets disponíveis para adoção'", () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.get('.button').click();
