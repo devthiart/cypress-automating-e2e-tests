@@ -5,6 +5,6 @@ describe('Register page', () => {
   });
   
   it('Must fill in the form fields correctly to register a new user', () => {
-    cy.register('Thiago André', 'thiagoandre@email.com', 'Password123');
+    cy.register('Thiago André', 'thiagoandre@email.com', 'Senha123');
   });
 });

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-19T18:15:30.538Z",
+    "end": "2025-11-19T18:15:34.269Z",
+    "duration": 3731,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fc96b63b-5777-420a-a8c7-91cfc08f95bf",
+      "title": "",
+      "fullFile": "cypress\\e2e\\correct-register.cy.js",
+      "file": "cypress\\e2e\\correct-register.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b57e00c-e804-43f5-9f3e-72288c9b2685",
+          "title": "Register page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Must fill in the form fields correctly to register a new user",
+              "fullTitle": "Register page Must fill in the form fields correctly to register a new user",
+              "timedOut": null,
+              "duration": 2582,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.register('Thiago André', 'thiagoandre@email.com', 'Password123');",
+              "err": {},
+              "uuid": "d64a92c8-cf6d-4e2b-92c6-ddabf46dfddd",
+              "parentUUID": "5b57e00c-e804-43f5-9f3e-72288c9b2685",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d64a92c8-cf6d-4e2b-92c6-ddabf46dfddd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2582,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

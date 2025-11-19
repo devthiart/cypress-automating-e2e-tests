@@ -7,6 +7,7 @@
     "test": "npx cypress open",
     "test-all": "npx cypress run",
     "test-login": "npx cypress run --spec './cypress/e2e/correct-login.cy.js'",
-    "test-reporter": "npx cypress run --reporter mochawesome"
+    "test-reporter": "npx cypress run --reporter mochawesome",
+    "test-cypress-cloud": "npx cypress run --record --key [API_KEY]"
   }
 }

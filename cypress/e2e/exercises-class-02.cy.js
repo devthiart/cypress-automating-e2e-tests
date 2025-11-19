@@ -17,8 +17,6 @@ describe('Exercises - Class 02', () => {
 
   it("testing login via a different flow", () => {
     cy.get('.header__message').click();
-    cy.get('[data-test="input-loginEmail"]').type('thiagoandre@email.com');
-    cy.get('[data-test="input-loginPassword"]').type('Senha123');
-    cy.get('[data-test="submit-button"]').click();
+    cy.login('thiagoandre@email.com', 'Senha123');
   });
 });
