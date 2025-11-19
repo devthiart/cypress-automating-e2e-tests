@@ -1,10 +1,12 @@
 {
   "devDependencies": {
-    "cypress": "^14.2.0"
+    "cypress": "^14.2.0",
+    "mochawesome": "^7.1.4"
   },
   "scripts": {
     "test": "npx cypress open",
     "test-all": "npx cypress run",
-    "test-login": "npx cypress run --spec './cypress/e2e/correct-login.cy.js'"
+    "test-login": "npx cypress run --spec './cypress/e2e/correct-login.cy.js'",
+    "test-reporter": "npx cypress run --reporter mochawesome"
   }
 }
