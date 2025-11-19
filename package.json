@@ -3,6 +3,8 @@
     "cypress": "^14.2.0"
   },
   "scripts": {
-    "test": "npx cypress open"
+    "test": "npx cypress open",
+    "test-all": "npx cypress run",
+    "test-login": "npx cypress run --spec './cypress/e2e/correct-login.cy.js'"
   }
 }
