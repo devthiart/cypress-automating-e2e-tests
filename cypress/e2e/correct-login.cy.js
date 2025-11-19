@@ -5,8 +5,6 @@ describe('Login page', () => {
   });
   
   it('Must fill in the login fields correctly and authenticate the user on the page.', () => {
-    cy.get('[data-test="input-loginEmail"]').type('thiagoandre@email.com');
-    cy.get('[data-test="input-loginPassword"]').type('Senha123');
-    cy.get('[data-test="submit-button"]').click();
+    cy.login('thiagoandre@email.com', 'Senha123');
   });
 });
