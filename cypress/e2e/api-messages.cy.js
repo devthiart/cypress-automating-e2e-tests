@@ -1,5 +1,6 @@
 describe('API Adopet', () => {
-  const authorization = `Bearer [TOKEN]`;
+  // const expectedTime = Math.random() * 1000; // Simulating Flaky Tests
+  const authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NTM2ODQzOS1mYzM3LTRiMGYtOThlZS04OGZkNmYzYTZmNDciLCJhZG9wdGVyTmFtZSI6IlRoaWFnbyBBbmRyw6kiLCJpYXQiOjE3NjM3Mzg4MzYsImV4cCI6MTc2Mzk5ODAzNn0.APL49KLAzRcEPqM32Ck2_G3HgV26r5pDZ9JkxX8vqbQ`;
 
   it('API Messages', () => {
     cy.request({
@@ -10,6 +11,7 @@ describe('API Adopet', () => {
       expect(res.status).to.be.equal(200);
       expect(res.body).is.not.empty;
       expect(res.body).to.have.property('msg');
+      // expect(res.duration).to.be.lte(expectedTime); // Simulatin Flaky Tests
     })
   });
 });
